@@ -1,0 +1,63 @@
+#game{
+    border: 2px solid black;
+    height: 400px;
+    width: 700px;
+    overflow: hidden;
+    background: url(bg.png);
+    background-size: cover;
+    background-repeat: repeat  no-repeat;
+    background-position: 200%;
+    animation: bg 3s linear  infinite ;
+    ;
+}
+@keyframes bg{
+    0%{
+        background-position: -190%;
+    }
+    100%{
+        background-position: right;
+    }
+}
+#player{
+    height: 50px;
+    
+    position: relative;
+    top: 350px;
+    left: 5px;
+}
+.jump{
+    animation: jump .6s ;
+}
+@keyframes jump{
+    0%{
+        top:350px;
+    }
+    40%{
+        top:300px;
+    }
+    60%{
+        top:300px;
+    }
+    100%{
+        top:350px;
+    }
+
+}
+
+#block{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    top: 320px;
+    left: 700px;
+    animation: block 2s linear infinite;
+}
+@keyframes block{
+    0%{
+        left: 700px; 
+    }
+    100%{
+        left:-25px;
+    }
+}
