@@ -1,11 +1,12 @@
 let player=document.getElementById("player")
 let block=document.getElementById("block")
 let audio=new Audio("Jump_Sound.mp3")
+let bgaud = new Audio("Naruto_Soundtrack.mp3")
 window.addEventListener('touchstart',jump)
 function jump(){
-
     player.className="jump"
     audio.play()
+    bgaud.play()
     setTimeout(function(){
         player.className="nojump"
     },1000)   
