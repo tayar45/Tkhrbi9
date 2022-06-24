@@ -3,6 +3,7 @@ let block=document.getElementById("block")
 let audio=new Audio("Jump_Sound.mp3")
 let bgaud = new Audio("Naruto_Soundtrack.mp3")
 window.addEventListener('touchstart',jump)
+window.addEventListener('keypress',jump)
 function jump(){
     player.className="jump"
     audio.play()
