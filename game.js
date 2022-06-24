@@ -1,10 +1,11 @@
 let player=document.getElementById("player")
 let block=document.getElementById("block")
+let audio=new Audio("Jump_Sound.mp3")
 window.addEventListener('touchstart',jump)
 function jump(){
 
     player.className="jump"
-
+    audio.play()
     setTimeout(function(){
         player.className="nojump"
     },1000)   
